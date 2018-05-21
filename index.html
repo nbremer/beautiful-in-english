@@ -50,7 +50,17 @@
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 		<script src="js/vanilla-modal.js"></script>
 		<script src="js/d3-annotation.js"></script>
-		<script src="js/d3-wordcloud.js"></script>
+        <script src="js/d3-wordcloud.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43942889-4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-43942889-4', { 'anonymize_ip': true }); //IP-masking
+        </script>
 
 	</head>
 
@@ -339,16 +349,6 @@
 			        .each(function() { ++n; }) 
 			        .on("end", function() { if (!--n) callback.apply(this, arguments); }); 
 			}//endall 
-        </script>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43942889-4"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-43942889-4', { 'anonymize_ip': true }); //IP-masking
         </script>
     </body>
 </html>
